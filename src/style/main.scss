@@ -1,0 +1,24 @@
+.img_wrapper {
+  border: 1px black solid;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.img_item {
+  width: 80px;
+  height: 100px;
+  border: aqua 1px solid;
+
+  & a {
+    width: inherit;
+    height: inherit;
+  }
+
+  & img {
+    width: inherit;
+    height: inherit;
+  }
+}
