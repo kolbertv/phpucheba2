@@ -5,40 +5,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <title>Домашка 4</title>
 </head>
 <body>
-
-<?php
-
-ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-
-require_once ('config.php');
-require_once ('function.php');
-
-
-
-?>
-
-<form action="#" method="post">
-    <input type="submit" name="img1" value="Загрузить картинку 1">
-    <input type="submit" name="img2" value="Загрузить картинку 2">
-    <input type="submit" name="img3" value="Загрузить картинку 3">
-    <input type="submit" name="img4" value="Загрузить картинку 4">
-<!--    <input type="submit" name="img" value="Загрузить картинки из БД2">-->
-</form>
-
-<?php
-
-echo '<pre>';
-    print_r($_POST);
-echo '</pre>';
-
-
-?>
 
 
 <div class="img_wrapper">
@@ -50,9 +20,6 @@ echo '</pre>';
      * Date: 21.05.2018
      * Time: 15:43
      */
-
-    
-    
 
     $arrayImg = array('product1.jpg', 'product2.jpg', 'product3.jpg', 'product4.jpg',);
 
@@ -73,8 +40,23 @@ echo '</pre>';
 
 </div>
 
+<form method="POST" enctype="multipart/form-data" action="index4.php">
+    <input type="file" name="myFile">
+    <input type="submit" value="Отправить">
+</form>
+
+<?php
+
+
+
+?>
 
 
 </body>
 </html>
+
+
+
+
+
 
