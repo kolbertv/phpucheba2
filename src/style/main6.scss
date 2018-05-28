@@ -1,0 +1,52 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.form_container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid gold;
+}
+
+.card_container {
+  height: 400px;
+  width: 900px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    height: 300px;
+    width: 200px;
+    border: 1px solid chartreuse;
+  }
+
+
+  &__img {
+    width: 200px;
+    //height: inherit;
+  }
+
+}
+
+.item_container {
+  height: 800px;
+  width: 900px;
+  border: 1px solid black;
+  //display: flex;
+  //flex-wrap: wrap;
+
+  &__item {
+    height: 300px;
+    width: 300px;
+    border: 1px solid chartreuse;
+  }
+
+
+  &__img {
+    width: 300px;
+    //height: inherit;
+  }
+
+}

@@ -23,7 +23,7 @@ let path = {
         html: 'build/',
         js: 'build/js/',
         css: 'build/css/',
-        img: 'build/img/',
+        img: 'build/images/',
         fonts: 'build/fonts/',
         json: 'build/json/'
     },
@@ -31,7 +31,7 @@ let path = {
     src: {
         html: 'src/*.php',
         js: 'src/js/*.js',
-        style: 'src/style/main.scss',
+        style: 'src/style/main6.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
         json: 'src/json/**/*.json',
