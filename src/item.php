@@ -6,6 +6,7 @@
                 <p><?= $item['name'] ?></p>
                 <p><?= $item['price'] ?>руб</p>
             </a>
+            <button id_good ='<?=$item['id_good']?>' >купить</button>
         </div>
     <? endforeach; ?>
 </div>

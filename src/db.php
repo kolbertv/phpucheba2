@@ -13,14 +13,14 @@ function getAssocResult($sql){
 }
 
 function getConnection(){
-    $db = mysqli_connect(HOST, USER, PASS, DB) or die(include('test.php'));
+    $db = mysqli_connect(HOST, USER, PASS, DB) or die("Ошибка " . mysqli_error($db));
     mysqli_query($db, "SET NAMES utf8");
     return $db;
 }
 
 function executeQuery($sql, $db = null){
     if($db == null){
-        $db = mysqli_connect(HOST, USER, PASS, DB) or die(include('test.php'));
+        $db = mysqli_connect(HOST, USER, PASS, DB) or die("Ошибка " . mysqli_error($db));
         mysqli_query($db, "SET NAMES utf8");
     }
 

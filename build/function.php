@@ -8,25 +8,19 @@
 
 
 
-function prepareVariables($page_name = "index")
+function prepareVariables($page_name = "index", $item_id = 0)
 {
-    $url_array = explode("/", $_SERVER['REQUEST_URI']);
     switch ($page_name) {
-
         case "index":
             $vars['content'] = 'item.php';
             $vars['title'] = SITE_TITLE . " - Главная страница";
             $vars['catalog_product'] = catalogProduct();
-
             break;
 
         case "good":
-
             $vars['content'] = 'itempage.php';
-            $vars['item_info'] = itemInfo($url_array[2]);
-            $vars['title'] = SITE_TITLE . " - Информация о товаре".$vars['item_info'];
-
-
+            $vars['item_info'] = itemInfo($item_id);
+            $vars['title'] = SITE_TITLE . " - Информация о товаре";
             break;
 
     }
