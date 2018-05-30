@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><? echo $content['title']?></title>
     <link rel="stylesheet" href="/css/main6.css">
+<!--    <script src="/js/index.js"></script>-->
 </head>
 <body>
 
@@ -18,7 +19,7 @@
 
     <input type="text" class="header__inputLogin">
     <input type="password" class="header__inputLogin">
-    <button class="header__buttonLogin">Вход</button>
+    <button onclick="loginButton" class="header__buttonLogin">Вход</button>
 
 </div>
 
@@ -26,6 +27,7 @@
 </header>
 
 <main class="main">
+
     <?php include $content['content']; ?>
 
 </main>
