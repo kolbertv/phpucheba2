@@ -10,7 +10,27 @@
 </head>
 <body>
 
-<?php include $content['content']; ?>
+<header class="header">
+
+<div class="header__logo"></div>
+<div class="header__menu"></div>
+<div class="header__auth">
+
+    <input type="text" class="header__inputLogin">
+    <input type="password" class="header__inputLogin">
+    <button class="header__buttonLogin">Вход</button>
+
+</div>
+
+
+</header>
+
+<main class="main">
+    <?php include $content['content']; ?>
+
+</main>
+
+
 
 
 
