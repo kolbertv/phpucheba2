@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><? echo $content['title']?></title>
     <link rel="stylesheet" href="/css/main6.css">
-<!--    <script src="/js/index.js"></script>-->
+    <script src="/js/index.js"></script>
 </head>
 <body>
 
@@ -17,9 +17,9 @@
 <div class="header__menu"></div>
 <div class="header__auth">
 
-    <input type="text" class="header__inputLogin">
-    <input type="password" class="header__inputLogin">
-    <button onclick="loginButton" class="header__buttonLogin">Вход</button>
+    <input type="text" class="header__inputLogin" id="header__inputLogin" value="qwerty1">
+    <input type="password" class="header__inputLogin" id="header__inputPassword" value="qwerty2">
+    <button onclick="loginButton()" class="header__buttonLogin">Вход</button>
 
 </div>
 
