@@ -23,6 +23,10 @@ function prepareVariables($page_name = "index", $item_id = 0)
             $vars['title'] = SITE_TITLE . " - Информация о товаре";
             break;
 
+        case "register":
+            $vars['title'] = SITE_TITLE . " - Регистрация пользователя";
+            break;
+
     }
     return $vars;
 }

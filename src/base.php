@@ -17,12 +17,13 @@
 <div class="header__menu"></div>
 <div class="header__auth">
 
-    <input type="text" class="header__inputLogin" id="header__inputLogin" value="qwerty1">
-    <input type="password" class="header__inputLogin" id="header__inputPassword" value="qwerty2">
-    <button onclick="loginButton()" class="header__buttonLogin">Вход</button>
+
+    <? include 'auth.php'?>
+    
+    
+    
 
 </div>
-
 
 </header>
 

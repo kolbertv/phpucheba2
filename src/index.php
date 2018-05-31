@@ -6,7 +6,18 @@ require_once('function.php');
 require_once('db.php');
 require_once('autorize.php');
 
+
+
 $isAuth = auth($_POST['login'], $_POST['pass'], $_POST['rememberme']);
+
+
+if (isset($_POST['exit'])) {
+    userExit();
+}
+
+echo $isAuth;
+print_r($_SESSION);
+print_r($_POST);
 
 
 $url_array = explode("/", $_SERVER['REQUEST_URI']);
@@ -18,25 +29,21 @@ if ($url_array[1] == "") {
 }
 
 $content = prepareVariables($page_name, $item_id);
+require 'base.php';
 
-
-if (!$_POST['metod'] == 'ajax') {
-    require 'base.php';
-
-} else {
-//    ob_start(); //запуск буферизации вывода
-    require 'auth.php';
-//    $str = ob_get_contents(); //Записываем в переменную то, что в буфере
-//    ob_end_clean(); //очищаем буфер
+//if (!$response['metod']== 'ajax') {
+//    require 'base.php';
+//
+//} else {
+//
+//    ob_start();
+//    require 'auth.php';
+//    $str = ob_get_contents();
+//    ob_end_clean();
 //    echo json_encode($str);
-}
+//}
 
-//echo "<pre>";
-//print_r($url_array);
-////echo $page_name;
-//////
-////print_r($content);
-//echo "</pre>";
+
 
 
 ?>
