@@ -15,7 +15,7 @@
 
 <div class="header__logo"></div>
 <div class="header__menu"></div>
-<div class="header__auth">
+<div class="header__auth" id="header__auth">
 
 
     <? include 'auth.php'?>
