@@ -24,6 +24,7 @@ function prepareVariables($page_name = "index", $item_id = 0)
             break;
 
         case "register":
+            $vars['content'] = 'register.php';
             $vars['title'] = SITE_TITLE . " - Регистрация пользователя";
             break;
 
